@@ -56,3 +56,63 @@ h1 {
     padding: 5px;
     margin: 5px;
 }
+
+
+.button {
+    transition: all 0.2s ease;
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #038930;
+    color: #fff;
+    font-size: 85%;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    line-height: normal;
+    -webkit-appearance: none;
+    border: 0.1em solid #038930;
+    border-radius: 3em;
+    margin-top: 15px;
+    margin-bottom:15px;
+    width: 400px;
+}
+.button:hover {
+    color: #fff;
+    background-color: #1d2d35;
+    border-color: #1d2d35;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:link {
+    color: yellowgreen;
+}
+
+a:visited {
+    color: red;
+}
+
+a:active {
+    color: purple;
+}
+
+#junk-drawer {
+    background: lightblue;
+    padding: 5px;
+}
+
+#junk-drawer p:nth-child(even) {
+  font-size: 2em;
+}
+
+table tr:nth-child(even) {
+ background-color: grey;
+}
+
+table tr:first-child {
+    background-color: lightskyblue;
+}
+
+#junk-drawer :not(.hoopz){
+    display: none;
+}
