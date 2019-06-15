@@ -83,12 +83,42 @@
         background-color: blue;
         float: right;
     }
+
     .no-more-floats {
-       clear: both;
+        clear: both;
+    }
+
+    .navbar-fixed {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 60px;
+        background-color: #333;
+        color: white;
+        text-align: center;
+
+        /* Browser is a frame set it to the top left of the frame */
+    }
+
+    #content {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    .relative {
+        position: relative;
+        padding-bottom: 10rem;
     }
 </style>
 
 <body>
+
+    <!-- Fixed Positioning -->
+    <!-- <div class="navbar-fixed">NAVBAR</div> -->
+
+
     <!-- How to Center -->
     <div class="hero">
         <h1>Position!</h1>
@@ -118,25 +148,39 @@
 
             Column 1
         </div>
-        <div class="half-width blue"> 
-            
+        <div class="half-width blue">
+
             Column 2
 
         </div>
 
         <div class="no-more-floats">
-          <p> We don't want things to float here.....</p>
+            <p> We don't want things to float here.....</p>
 
         </div>
-   
+
     </div>
 
 
-    <!-- Fixed Positioning -->
 
-    <!-- Absolute Positioning -->
+
+
+    <!-- Absolute Positioning 
+       Find the containing box and position from there 
+       If no box exist then use the browser as the box.
+    -->
+
+
+    <!-- <div id="content">
+        Fascinating content
+    </div> -->
 
     <!-- Relative Positioning -->
+    <div class="relative">
+        <div id="content">
+            Fascinating content
+        </div>
+    </div>
 
     <!-- Floats -->
 
