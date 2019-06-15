@@ -1,0 +1,43 @@
+
+#nav-bar {
+
+    max-width: 1128px;
+    width: 100%;
+    margin: auto;
+}
+
+
+
+.header-separator {
+    height: 6px;
+    background-color: #607998;
+}
+
+#userName {
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    font-size: 8px;
+    color: #999;
+    background-color: #fff;
+    vertical-align: middle;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    width: 120px;
+    height: 15px;
+    margin-left: 10px;
+
+
+}
+
+#passWord {
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    font-size: 8px;
+    color: #999;
+    background-color: #fff;
+    vertical-align: middle;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    width: 120px;
+    height: 15px;
+    margin-left: 10px;
+
+}
