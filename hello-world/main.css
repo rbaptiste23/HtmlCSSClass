@@ -10,7 +10,6 @@ div {
     background-color: brown;
 } */
 
-
 .blue-box {
     height: 50px;
     width: 50px;
@@ -18,18 +17,15 @@ div {
     background-color: blue;
 }
 
-
 #big-box {
     height: 200px;
     width: 200px;
     margin: 2rem;
     background-color: orange;
-
 }
 
 .breakfast {
     max-height: 350px;
-
 }
 
 .rounded {
@@ -57,7 +53,6 @@ div {
 .two-columns {
     background-color: lightgrey;
     min-height: 10rem;
-
 }
 
 .half-width {
@@ -69,7 +64,6 @@ div {
 .red {
     background-color: red;
     float: left;
-
 }
 
 .blue {
@@ -90,7 +84,6 @@ div {
     background-color: #333;
     color: white;
     text-align: center;
-
     /* Browser is a frame set it to the top left of the frame */
 }
 
@@ -98,7 +91,6 @@ div {
     position: absolute;
     top: 0px;
     left: 0px;
-   
 }
 
 .relative {
@@ -106,7 +98,6 @@ div {
     padding-bottom: 10rem;
     z-index: 500;
     background-color: crimson;
-  
 }
 
 .container {
@@ -123,7 +114,6 @@ div {
     border-radius: 5%;
     color: white;
     font-weight: 800;
-  
 }
 
 .very-front {
@@ -137,7 +127,6 @@ div {
 .nav {
     color: white;
     min-height: 6rem;
-    
 }
 
 .nav ul {
@@ -155,3 +144,32 @@ div {
     font-size: 1.5em;
 }
 
+/* MEDIA QUERIES */
+
+/* Only on Desktop */
+
+@media (min-width: 600px) {
+    body {
+        background-color: blue;
+    }
+}
+
+/* Only on Phones */
+
+@media (max-width: 600px) {
+    body {
+        background-color: red;
+    }
+    .nav {
+        min-height: 150px;
+    }
+    .nav ul {
+        flex-direction: column;
+    }
+}
+
+
+#pricing {
+    background-color: coral;
+    color: green;
+}
