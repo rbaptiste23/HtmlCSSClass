@@ -48,6 +48,10 @@ div {
     align-items: center;
     flex-direction: column;
     padding: 8rem;
+    background: url("https://images.unsplash.com/photo-1560542780-2afddfc17c0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=80");
+    background-size: cover;
+    min-height: 700px;
+    background-repeat: no-repeat;
 }
 
 .two-columns {
@@ -94,9 +98,62 @@ div {
     position: absolute;
     top: 0px;
     left: 0px;
+   
 }
 
 .relative {
     position: relative;
     padding-bottom: 10rem;
+    z-index: 500;
+    background-color: crimson;
+  
 }
+
+.container {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    font-size: 2em;
+    z-index: 100;
+}
+
+.chat-widget {
+    background-color: lightgreen;
+    padding: 1em;
+    border-radius: 5%;
+    color: white;
+    font-weight: 800;
+  
+}
+
+.very-front {
+    background-color: lightgreen;
+    padding: 1em;
+    border-radius: 5%;
+    color: white;
+    font-weight: 800;
+}
+
+.nav {
+    color: white;
+    min-height: 6rem;
+    
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+ 
+
+}
+
+.nav ul li a {
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
