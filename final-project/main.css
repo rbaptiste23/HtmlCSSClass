@@ -1,0 +1,32 @@
+#top {
+    height: 90px;
+    padding-top: 0;
+    background: #1571ba;
+    width: 100%;
+    overflow: hidden;
+    z-index: 3500;
+    position: relative;
+    border-bottom: 1px solid #3785c4;
+    color:white;
+    background-image: url(./usracing.png);
+    background-repeat: no-repeat;
+  ;
+}
+
+
+.nav-bar-container {
+  color: white;
+  background-color: blue;
+}
+
+.dropdown-menu a:hover {
+  display: block;
+  cursor: default;
+  background-color: #991a1e;
+}
+
+.dropdown-toggle:hover {
+  display: block;
+  cursor: default;
+  background-color: #991a1e;
+}
