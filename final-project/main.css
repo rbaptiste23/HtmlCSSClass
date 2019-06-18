@@ -1,32 +1,98 @@
-#top {
-    height: 90px;
-    padding-top: 0;
-    background: #1571ba;
-    width: 100%;
-    overflow: hidden;
-    z-index: 3500;
-    position: relative;
-    border-bottom: 1px solid #3785c4;
-    color:white;
-    background-image: url(./usracing.png);
-    background-repeat: no-repeat;
-  ;
+body {
+  margin: 0;
+  text-align: center;
 }
 
+div#top {
+  height: 90px;
+  padding-top: 0;
+  background: #1571ba;
+  width: 100%;
+  overflow: hidden;
+  z-index: 3500;
+  position: relative;
+}
 
-.nav-bar-container {
+div input.bet-button {
+  position: relative;
+  right: 300px;
+  bottom: 20px;
+}
+
+.container #top #bet-button {
+  background-color: #e2001a;
+  border-radius: 3px;
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  min-width: 100px;
+  color: #fff;
+  background: c71f24;
+}
+
+img.horse {
+  margin: 0 auto;
+  width: 200px;
+  height: 30px;
+}
+
+/* Navigation Bar */
+
+#navbarid {
+  padding: 0px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1571ba;
   color: white;
-  background-color: blue;
+  width: 100%;
+  border: #fff;
+}
+
+ul.navbar-nav {
+  width: 100%;
+  color: #fff;
+}
+
+a#navbarDropdownMenuLink {
+  color: #fff;
+}
+
+.dropdown-menu a {
+  color: #556067;
+  padding: 8px 15px;
+  border-top: 1px dotted #b3b8bb;
+  border: solid 4px #991a1e;
+  font-size: 16px;
+  background: #fff;
+  left: auto;
+  top: auto;
+  padding: 0;
+  border-radius: 0;
+  z-index: 9999!important;
+  margin-top: 0!important;
 }
 
 .dropdown-menu a:hover {
   display: block;
   cursor: default;
-  background-color: #991a1e;
+  font-size: 16px;
+  color: #556067;
+  padding: 8px 15px;
+  border-top: 1px dotted #b3b8bb;
 }
 
 .dropdown-toggle:hover {
   display: block;
   cursor: default;
   background-color: #991a1e;
+  color: #fff;
 }
