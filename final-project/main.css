@@ -3,14 +3,32 @@ body {
   text-align: center;
 }
 
-div#top {
+div.header-container {
+  display: flex;
   height: 90px;
   padding-top: 0;
   background: #1571ba;
   width: 100%;
   overflow: hidden;
   z-index: 3500;
-  position: relative;
+  align-items: center;
+}
+
+img.horse {
+  margin: 0 auto;
+  width: 245.55px;
+  height: 52px;
+}
+
+div.horse-logo {
+  justify-content: center;
+  flex: 8;
+  text-align: center;
+}
+
+div.bet-now-button.bet-button {
+  flex: 1;
+ 
 }
 
 div input.bet-button {
@@ -33,11 +51,7 @@ div input.bet-button {
   background: c71f24;
 }
 
-img.horse {
-  margin: 0 auto;
-  width: 200px;
-  height: 30px;
-}
+
 
 /* Navigation Bar */
 
