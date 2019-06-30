@@ -1,5 +1,3 @@
-
-
 body {
   margin: 0;
   text-align: center;
@@ -8,7 +6,7 @@ body {
 /* Header */
 
 div.header-container {
-  display: flex;
+
   height: 80px;
   padding-top: 0;
   background: #1571ba;
@@ -17,6 +15,13 @@ div.header-container {
   z-index: 3500;
   align-items: center;
 }
+
+.container {
+  max-width: 100%;
+  padding: 0px;
+  background: #1571ba;
+}
+
 
 div.horse-logo {
   justify-content: center;
@@ -72,31 +77,21 @@ div.flex-container {
   color: white;
   width: 100%;
   border: #fff;
-  font-family: roboto,arial,helvetica,sans-serif;
+  font-family: roboto, arial, helvetica, sans-serif;
   border-top: 1px solid #3785c4;
+  align-items: center;
 }
 
 
-
-
-
-
-
-ul.navbar-nav {
-  width: 100%;
-  color: #fff;
-}
-
+ 
 a#navbarDropdownMenuLink {
   color: #fff;
 }
 
-
-div.ddmenu-list:hover{
- background-color:#991a1e;
+div.ddmenu-list:hover {
+  background-color: #991a1e;
 }
 
- 
 .dropdown-menu.show:hover {
   display: block;
   cursor: default;
@@ -111,9 +106,6 @@ div.ddmenu-list:hover{
   border-bottom: solid 4px #991a1e;
   border-radius: 0%;
 }
-
-
-
 
 .dropdown-menu a {
   display: block;
@@ -133,47 +125,44 @@ div.ddmenu-list:hover{
   color: #fff;
 } */
 
-
 li.nav-item.dropdown {
   font-size: 12px;
 }
 
- li.nav-item.dropdown:first-child {
+li.nav-item.dropdown:first-child {
   border-left: 1px solid #3785c4;
-} 
+  border-top: 1px solid #3785c4;
+}
+
+li.nav-item.dropdown:last-child {
+  border-right: 1px solid #3785c4;
+}
 
 
 li.nav-item.dropdown.show:hover {
-  background-color:#991a1e;
+  background-color: #991a1e;
 }
 
-
- 
 a.nav-item.dropdown.toggle {
-  font-size: 13px;
+  font-size: 12px;
   padding: 10px 18px;
 }
 
-
-
 .nav-link {
   display: block;
- /* padding: 0.5rem 12rem; */
+  /* padding: 0.5rem 12rem; */
   margin-left: 83px;
-  
-  
 }
 
-ul.today-racing li{
+ ul.today-racing li {
   font-weight: 400;
   color: #556067;
   padding: 8px 15px;
   border-bottom: 1px dotted #beb8bb;
   list-style: none;
-}
+} 
 
-
-ul {
+ ul {
   display: block;
   list-style-type: disc;
   margin-block-start: 1em;
@@ -181,15 +170,325 @@ ul {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 0px;
-}
+} 
 
 div#navbarNavDropdown {
-  height: 18px;
+  height: 58px;
   width: 100%;
 }
 
-div#carouselExampleControls{
+div#carouselExampleControls {
   position: relative;
   margin-top: 16px;
+}
 
+h5.my-text {
+  line-height: 20.2;
+  font-family: "roboto condensed", arial, helvetica, sans-serif!important;
+  font-weight: 400;
+  color: #fff;
+  line-height: normal;
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, .5);
+}
+
+p.my-text {
+  line-height: 10.2;
+}
+
+span.hb {
+  width: 668px;
+  height: 108px;
+}
+
+#sign-up-button, #sign-up-button-2, #sign-up-button-3 {
+  background: #c71f24;
+  color: #fff;
+  border: 0;
+  font-family: roboto, arial, helvetica, sans-serif;
+  font-size: 14px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 12px;
+  line-height: normal;
+  font-weight: 400;
+  font-size: 18px;
+  font-weight: 700;
+  clear: none;
+  overflow: hidden;
+  line-height: normal!important;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .4);
+  -moz-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .4);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .4);
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  text-shadow: none;
+  padding: 15px 25px!important;
+  position: relative;
+  left: 39.16px;
+  bottom: 65px;
+}
+
+#sign-up-button-2 {
+  background: #c71f24;
+  color: #fff;
+  border: 0;
+  font-family: roboto, arial, helvetica, sans-serif;
+  font-size: 14px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 12px;
+  line-height: normal;
+  font-weight: 400;
+  font-size: 18px;
+  font-weight: 700;
+  clear: none;
+  overflow: hidden;
+  line-height: normal!important;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .4);
+  -moz-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .4);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .4);
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  text-shadow: none;
+  padding: 15px 25px!important;
+  position: absolute;
+  left: 519.16px;
+  bottom: 406px;
+}
+
+#sign-up-button-3 {
+  background: #c71f24;
+  color: #fff;
+  border: 0;
+  font-family: roboto, arial, helvetica, sans-serif;
+  font-size: 14px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 12px;
+  line-height: normal;
+  font-weight: 400;
+  font-size: 18px;
+  font-weight: 700;
+  clear: none;
+  overflow: hidden;
+  line-height: normal!important;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .4);
+  -moz-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .4);
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .4);
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  text-shadow: none;
+  padding: 15px 25px!important;
+  position: relative;
+  left: 283.16px;
+  bottom: 445px;
+}
+
+div#the-car {
+  position: relative;
+}
+
+div#the-car-2 {
+  position: relative;
+}
+
+div#the-car-3 {
+  position: relative;
+}
+
+h5.my-text {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  height: 2px;
+  size: 300px;
+  width: 800px;
+  font-size: 60.6px;
+  font-family: "roboto condensed", arial, helvetica, sans-serif!important;
+  font-weight: 700;
+}
+
+p.my-text {
+  position: absolute;
+  top: 45px;
+  left: 535px;
+  height: 2px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  width: 370px;
+  height: 48px;
+  font-family: "roboto condensed", arial, helvetica, sans-serif!important;
+}
+
+p.my-text-2 {
+  position: absolute;
+  top: 160px;
+  left: 410px;
+  height: 2px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  width: 400px;
+  height: 48px;
+  font-family: "roboto condensed", arial, helvetica, sans-serif!important;
+}
+
+p.my-text-3 {
+  position: absolute;
+  top: 161px;
+  left: 535px;
+  height: 2px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  width: 400px;
+  height: 48px;
+  font-family: "roboto condensed", arial, helvetica, sans-serif!important;
+}
+
+input#sign-up-button {
+  position: absolute;
+  top: 230px;
+  left: 675px;
+  display: block;
+  height: 50px;
+  width: 200px;
+}
+
+input#sign-up-button2 {
+  position: absolute;
+  top: 230px;
+  left: 575px;
+  display: block;
+  height: 50px;
+  width: 200px;
+}
+
+img.thumb-up {
+  position: absolute;
+  z-index: 1;
+  top: 230px;
+  left: 690px;
+  display: block;
+  height: 50px;
+  width: 20px;
+  color: #fff;
+}
+
+img.star {
+  position: absolute;
+  z-index: 1;
+  top: 221px;
+  left: 521px;
+  display: block;
+  height: 50px;
+  width: 20px;
+  color: #fff;
+}
+
+img.thumb-up-2 {
+  position: absolute;
+  z-index: 1;
+  left: 713px;
+  bottom: 445px;
+  display: block;
+  height: 50px;
+  width: 20px;
+  color: #fff;
+}
+
+
+/*Horse Betting Section  */
+div.horse-betting-section {
+  position: relative;
+  background: #fff;
+  background-image: url("./horsebg.jpg");
+  height: 1000px;
+  background-repeat: no-repeat;
+}
+
+h1.hb {
+  color: #1672BD;
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 0 20px;
+  text-align: center
+}
+
+h3.hb2 {
+  color: #1672bd;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 42px;
+  text-align: center;
+}
+
+p.pb1{
+  color: #444;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 0 40px;
+  text-align: center;
+}
+
+
+
+#btn-live-odds {
+  background-image: linear-gradient(to bottom, #e2001a, #991a1e);
+  color: #fff;
+  border-radius: 3px;
+  border: #991a1e;
+  height: 97px;
+  width: 375px;
+  min-width: 200px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.618;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#btn-live-odds:hover {
+  background-image: linear-gradient(to bottom, #e2001a, #e2001a);
+  color: #fff;
+  border-radius: 3px;
+  height: 97px;
+  width: 375px;
+  min-width: 200px;
+  font-size: 20px;
+  font-weight: 900;
+  margin: 0 auto;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, 
+.col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, 
+.col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, 
+.col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, 
+.col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
+ .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, 
+ .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, 
+ .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, 
+ .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, 
+ .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px; 
 }
