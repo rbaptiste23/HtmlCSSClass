@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  text-align: center;
-}
 
 /* Header */
 
+body {
+  margin: 0px;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+
+
+/* Row 1  */
+/* Bootstrap container class */
+div.container {
+  max-width: 100%;
+  padding: 0px;
+  background: #1571ba;
+  padding-top: 10px;
+}
+
+
+/* Used in the first row of the
+   Bootstrap container class  */
 div.header-container {
 
-  height: 80px;
+  height: 40px;
   padding-top: 0;
   background: #1571ba;
   width: 100%;
@@ -16,24 +36,14 @@ div.header-container {
   align-items: center;
 }
 
-.container {
-  max-width: 100%;
-  padding: 0px;
-  background: #1571ba;
-}
-
-
-div.horse-logo {
-  justify-content: center;
-  flex: 4.5;
+/* Used to put the image 
+in the middle of the row */
+ div.horse-logo {
   text-align: center;
-}
+} 
 
-div.bet-now-button {
-  justify-content: first baseline;
-  flex: 1;
-  text-align: center;
-}
+/* Used to style the Bet Now 
+   button */
 
 #bet-button {
   background-image: linear-gradient(to bottom, #e2001a, #991a1e);
@@ -46,6 +56,10 @@ div.bet-now-button {
   font-weight: bold;
 }
 
+/* Used to style the bet now 
+hover button.
+*/
+
 #bet-button:hover {
   background-image: linear-gradient(to bottom, #e2001a, #e2001a);
   color: #fff;
@@ -56,42 +70,57 @@ div.bet-now-button {
   font-weight: bold;
 }
 
+
+/* Used to size row 1 
+horse logo */
 img.horse {
   margin: 0 auto;
-  width: 245.55px;
-  height: 52px;
+  width: 173.55px;
+  max-height: 52px!important;
 }
 
+/* Row 1 */
+
+
+
+
+
+
+/* Row 2 */
 /* Navigation Bar */
 
 #navbarid {
   padding: 0px;
 }
+/* Keep the carousel on row 2 
+ at the max with w/ proper margins */
 
-div.flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: left;
-  background-color: #1571ba;
-  color: white;
+ .container-fluid {
   width: 100%;
-  border: #fff;
-  font-family: roboto, arial, helvetica, sans-serif;
-  border-top: 1px solid #3785c4;
-  align-items: center;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -16px;
 }
 
-
- 
+ /* Used to change the font color
+ to white of the drop down
+ menus  */
 a#navbarDropdownMenuLink {
   color: #fff;
 }
 
+/* Used to change the color when
+the user hovers over a nav menu 
+option */
 div.ddmenu-list:hover {
   background-color: #991a1e;
 }
 
+
+/* Used to add a border around the 
+drop down menu list */
 .dropdown-menu.show:hover {
   display: block;
   cursor: default;
@@ -118,21 +147,20 @@ div.ddmenu-list:hover {
   margin-top: 0;
 }
 
-/* .dropdown-toggle:hover {
-  display: block;
-  cursor: default;
-  background-color: #991a1e;
-  color: #fff;
-} */
+
 
 li.nav-item.dropdown {
   font-size: 12px;
 }
+/*  Used to add a border to the 
+left and top of the nav menu */
 
 li.nav-item.dropdown:first-child {
   border-left: 1px solid #3785c4;
   border-top: 1px solid #3785c4;
 }
+/* Used to add a right border to the nav
+dropdown */
 
 li.nav-item.dropdown:last-child {
   border-right: 1px solid #3785c4;
@@ -148,12 +176,15 @@ a.nav-item.dropdown.toggle {
   padding: 10px 18px;
 }
 
+
+/* Used to spread out the nav columns */
 .nav-link {
   display: block;
-  /* padding: 0.5rem 12rem; */
   margin-left: 83px;
 }
 
+/*  Used to add styling to the nav bar drop
+down menus */
  ul.today-racing li {
   font-weight: 400;
   color: #556067;
@@ -173,14 +204,19 @@ a.nav-item.dropdown.toggle {
 } 
 
 div#navbarNavDropdown {
-  height: 58px;
+  height: 51px;
   width: 100%;
 }
-
+/* Keeps the carousel controls
+   in their correct position
+*/
 div#carouselExampleControls {
   position: relative;
   margin-top: 16px;
 }
+
+
+/* Text over the icons */
 
 h5.my-text {
   line-height: 20.2;
@@ -227,7 +263,7 @@ span.hb {
   border-radius: 8px;
   text-shadow: none;
   padding: 15px 25px!important;
-  position: relative;
+  position: relative; 
   left: 39.16px;
   bottom: 65px;
 }
@@ -309,24 +345,24 @@ div#the-car-3 {
 }
 
 h5.my-text {
-  position: absolute;
+   position: absolute; 
   top: 100px;
   left: 200px;
   height: 2px;
   size: 300px;
   width: 800px;
-  font-size: 60.6px;
+  font-size: 6vw;
   font-family: "roboto condensed", arial, helvetica, sans-serif!important;
   font-weight: 700;
 }
 
 p.my-text {
-  position: absolute;
+   position: absolute; 
   top: 45px;
   left: 535px;
   height: 2px;
   color: #fff;
-  font-size: 30px;
+  font-size: 3vw;
   font-weight: 400;
   width: 370px;
   height: 48px;
@@ -334,12 +370,12 @@ p.my-text {
 }
 
 p.my-text-2 {
-  position: absolute;
+   position: absolute; 
   top: 160px;
   left: 410px;
   height: 2px;
   color: #fff;
-  font-size: 30px;
+  font-size: 3vw;
   font-weight: 400;
   width: 400px;
   height: 48px;
@@ -347,12 +383,12 @@ p.my-text-2 {
 }
 
 p.my-text-3 {
-  position: absolute;
+   position: absolute; 
   top: 161px;
   left: 535px;
   height: 2px;
   color: #fff;
-  font-size: 30px;
+  font-size: 3vw;
   font-weight: 400;
   width: 400px;
   height: 48px;
@@ -360,7 +396,7 @@ p.my-text-3 {
 }
 
 input#sign-up-button {
-  position: absolute;
+   position: absolute; 
   top: 230px;
   left: 675px;
   display: block;
@@ -369,7 +405,7 @@ input#sign-up-button {
 }
 
 input#sign-up-button2 {
-  position: absolute;
+   position: absolute; 
   top: 230px;
   left: 575px;
   display: block;
@@ -410,12 +446,28 @@ img.thumb-up-2 {
   color: #fff;
 }
 
+/* new stuff */
+.box{
+  position:relative;
+}
+
+.img-title{
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 10%;
+  letter-spacing: 3px;
+}
+
+
 
 /*Horse Betting Section  */
 div.horse-betting-section {
   position: relative;
   background: #fff;
-  background-image: url("./horsebg.jpg");
+  background-image: url("./images/horsebg.jpg");
   height: 1000px;
   background-repeat: no-repeat;
 }
@@ -491,4 +543,28 @@ p.pb1{
   width: 100%;
   padding-right: 0px;
   padding-left: 0px; 
+}
+
+ 
+
+
+.dropdown-menu {
+  padding: 0px;
+}
+
+
+
+.box{
+  position:relative;
+  border: 5px solid black;
+}
+
+.img-text{
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 10%;
+  letter-spacing: 3px;
 }

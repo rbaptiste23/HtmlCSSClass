@@ -1,4 +1,18 @@
 .nav-icons a {
- margin-right: 12px;
+    margin-right: 12px;
 }
-  
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+   
+}
+.container.col1 {
+    flex: 8px;
+}
+
+.container.col2 {
+    flex: 2px;
+    align-items: right;
+}

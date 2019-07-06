@@ -1,0 +1,55 @@
+html {
+    background-color: #fa923f;
+    padding: 10px;
+  
+}
+
+body {
+    background-color: yellow;
+    padding: 10px;
+    margin: 0;
+    /* position: absolute;
+    top: 0; */
+    /* Since position absoute was added now 
+       the header element looks at the body
+      container instead of the html container. 
+      We are able to change the positioning 
+      context*/
+
+      /* By becoming an absolute position the 
+       block level element no longer applies. So 
+       it doesn't take up the entire width+ */
+
+       position: relative;
+       top: 50px;
+}
+
+header {
+    background-color: green;
+ 
+     /* By selecting absolute we took
+        header out of the 
+       normal document flow  */
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+nav {
+    background-color:purple;
+    margin: 10px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+
+}
+
+footer {
+    background-color: red;
+    margin: 10px;
+}
+
+/* You can only change widht height margin, padding, etc 
+ on block elements only
+ block elements by default take up 100 % width of the page.
+ */

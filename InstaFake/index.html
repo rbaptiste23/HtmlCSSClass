@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -11,35 +12,84 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="./main.css" />
+
     <title>InstaFake</title>
   </head>
   <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand">InstaFake 💅🏻</a>
+
       <form class="form-inline">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
+
       <div class="nav-icons">
-        <a href="/create">
-          <img src="./img/heart.svg" alt="Heart">
+        <a href="/explore">
+          <img src="./img/compass.svg" alt="Compass" />
         </a>
-        <a href="/create">
-          <img src="./img/compass.svg" alt="Heart">
+
+        <a href="/acccount">
+          <img src="./img/user.svg" alt="user" />
         </a>
-        <a href="/create">
-          <img src="./img/user.svg" alt="Heart">
+
+        <a href="/friends">
+          <img src="./img/heart.svg" alt="Heart" />
         </a>
       </div>
     </nav>
+
     <div class="container">
-      <!-- THE FEED -->
-      <h1>Instagram, is that you? 🤔</h1>
-      <!-- SIDEBAR -->
+      <div class="row">
+        <!-- THE FEED -->
+        <div class="col-sm-8" style="background: red;">
+          <div class="feed-container" style="background: green;">
+            FEED CONTAINER
+
+            <!-- CONTENT CONTAINER STARTS -->
+            <div class="content-container" style="background: aqua;">
+              CONTENT INSIDE HERE
+
+              <!-- IMAGE #1 -->
+              <div class="card" style="width: 600px;">
+                <img src="https://picsum.photos/id/237/200" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+              <!-- IMAGE #2 -->
+              <div class="card" style="width: 600px;">
+                <img src="https://picsum.photos/200" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <!-- CONTENT CONTAINER ENDS -->
+          </div>
+          FEED COLUMN🎉
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="col-sm-4" style="background: blue;">
+          SIDEBAR 🍹
+        </div>
+      </div>
     </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
